@@ -67,7 +67,7 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.item-text {
+.item-txt {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -101,7 +101,7 @@ img {
 .logo {
   padding-top: 24px;
   padding-bottom: 24px;
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -229,15 +229,18 @@ img {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* --------------Features---------------- */
 /* --------------Features---------------- */
 
-.features-img {
+.features-img-box {
   background: #f4f4fd;
   border-radius: 4px;
-  width: calc((100% - 3 * 24px) / 4);
+  display: flex;
+  padding: 24px 0px;
   height: 122px;
+  align-items: center;
   justify-content: center;
   margin-bottom: 8px;
 }
@@ -277,13 +280,14 @@ img {
 /* --------------our Team---------------- */
 /* --------------our Team---------------- */
 
-.team-sco-wrap {
+.team-soc-wrap {
 }
 
 .team-soc-list {
   display: flex;
   gap: 24px;
   margin-top: 8px;
+  padding: 4px 0;
 }
 .team-soc-item {
   border-radius: 50%;
@@ -372,8 +376,8 @@ img {
 }
 .customer-link:hover,
 .customer-link:focus {
-  border-color: var(--btn-second-color);
-  fill: var(--btn-second-color);
+  border-color: #4d5ae5;
+  fill: #4d5ae5;
 }
 
 /* --------------PORTFOLIO---------------- */
@@ -401,6 +405,8 @@ img {
   background-color: #4d5ae5;
   color: #ffffff;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn-list {
   justify-content: center;
@@ -416,6 +422,10 @@ img {
   row-gap: 48px;
 }
 .main-item {
+  cursor: pointer;
+}
+.main-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .text-box {
   display: block;
@@ -434,4 +444,42 @@ img {
 .footer-text {
   color: #e7e9fc;
   margin-top: 16px;
+}
+.footer-soc-title {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.footer-box {
+  display: flex;
+  gap: 120px;
+  align-items: baseline;
+}
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-soc-icon {
+  fill: var(--btn-text-color);
+}
+.footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 16px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background: #31d0aa;
 }
